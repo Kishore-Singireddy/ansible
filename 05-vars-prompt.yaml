@@ -5,7 +5,7 @@
       prompt: "Enter your username "
 
     - password: password
-      prompt: Enter your password:
+      prompt: "Enter your password"
       private: yes
   tasks:
     - name: print the user name
