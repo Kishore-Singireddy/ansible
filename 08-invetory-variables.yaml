@@ -1,0 +1,16 @@
+- name: Inventory variables
+  hosts: mongodb
+  tasks: 
+    - name: print host level variable
+      ansible.builtin.debug:
+        msg: "Hi This {{ username }}, {{ LOCATION }} {{ password }}"
+
+
+
+- name: Local variables
+  hosts: local
+  connection: local
+  tasks: 
+    - name: print host level variable
+      ansible.builtin.debug:
+        msg: "Hi This {{ LOCATION }} "
