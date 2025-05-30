@@ -1,0 +1,12 @@
+- name: install nginx
+  hosts: nginx
+  tasks: 
+    -name: disabling default nginx
+    ansible.builtin.dnf:
+      name: nginx
+      state: absent
+
+    -name: disabling default nginx
+    ansible.builtin.dnf:
+      name: nginx:1.24
+      state: present

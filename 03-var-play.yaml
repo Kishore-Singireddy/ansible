@@ -1,0 +1,10 @@
+- name: var playbook
+  hosts: mongodb
+  vars:
+    DATE: 30.05.20025
+    MESSAGE: "How are you"
+  task:
+    - name: print the variables
+      ansible.builtin.debug:
+        msg: "Today is {{ DATE }}, {{ MESSAGE }}"
+      
