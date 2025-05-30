@@ -7,4 +7,13 @@
     - name: print the variables
       ansible.builtin.debug:
         msg: "Today is {{ DATE }}, {{ MESSAGE }}"
+
+
+- name: var-playbook2
+  hosts: nginx
+  tasks:
+    - name: print the variables
+      ansible.builtin.debug:
+        msg: "Message from play two "
+        msg: "Today is {{ DATE }}, {{ MESSAGE }}"
       
