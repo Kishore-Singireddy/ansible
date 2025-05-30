@@ -6,7 +6,6 @@
   vars_prompt:
   - name: GREETING
     prompt: "Enter PROMPT"
-  
   vars: 
   - GREETING: "hello_from_play"
   tasks:
@@ -14,4 +13,4 @@
     vars: 
     - GREETING: "Hello_from_tasks"
     ansible.builitin.debug:
-      msg: {{ GREETING }}
+      msg: "{{ GREETING }}"
