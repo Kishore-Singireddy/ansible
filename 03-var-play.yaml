@@ -3,17 +3,29 @@
   vars:
     DATE: 30.05.20025
     MESSAGE: "How are you"
+    LEVLE: One
+    TASK: One
   tasks:
     - name: print the variables
       ansible.builtin.debug:
         msg: "Today is {{ DATE }}, {{ MESSAGE }}"
+        msg: "This variable is from Play {{ LEVEL }} and {{ TASK }}"
+
+
 
 
 - name: var-playbook2
   hosts: nginx
+  vars:
+    LEVEL: two
+    TASK: two
   tasks:
-    - name: print the variables
+    - name: Play 2 print
       ansible.builtin.debug:
-        msg: "Message from play two "
+        msg: "This variable is from Play {{ LEVEL }} and {{ TASK }}"
         #msg: "Today is {{ DATE }}, {{ MESSAGE }}"
       
+
+    - name: Play 2 leve 2
+      ansible.builtin.debug:
+        msg: "This variable is from Play {{ LEVEL }} and {{ TASK }} - play 2 level2"
