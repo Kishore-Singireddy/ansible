@@ -1,5 +1,5 @@
 - name: var playbook
-  hosts: mongodb
+  hosts: nginx
   vars:
     DATE: 30.05.20025
     MESSAGE: "How are you"
