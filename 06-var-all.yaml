@@ -21,7 +21,7 @@
 
 - name: Playbook 2
   hosts: mongodb
-  vars_file:
+  vars_files:
     - vars.yaml
   tasks:
     - name: print the variable
