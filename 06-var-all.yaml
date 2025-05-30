@@ -2,7 +2,6 @@
   hosts: mongodb
   vars_files: 
     - vars.yaml
-
   vars_prompt:
     - name: LOCATION
       prompt: "Entre prompt!"
@@ -21,12 +20,10 @@
 
 - name: Playbook 2
   hosts: mongodb
-  vars_files:
-    - vars.yaml
   tasks:
     - name: print the variable
       ansible.builtin.debug:
-      msg: This from {{ LOCATION }}
+      msg: This from playbook2 {{ LOCATION }}
       
     
   
