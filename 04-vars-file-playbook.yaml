@@ -1,0 +1,7 @@
+- name: variables from file
+  hosts: mongodb
+  vars_file: vars
+  tasks:
+    - name: print variable from file
+      ansible.builtin.debug:
+        msg: This variable is from {{ FROM }}
