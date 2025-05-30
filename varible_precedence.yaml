@@ -1,8 +1,8 @@
 - name: program for variable precedence
   hosts: local
   connection: local
-  vars: 
-    GREETING: "hello_from_play"
+  # vars: 
+  #   GREETING: "hello_from_play"
   # vars_files:
   # - vars.yaml
   # vars_prompt:
