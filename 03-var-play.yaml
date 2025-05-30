@@ -15,5 +15,5 @@
     - name: print the variables
       ansible.builtin.debug:
         msg: "Message from play two "
-        msg: "Today is {{ DATE }}, {{ MESSAGE }}"
+        #msg: "Today is {{ DATE }}, {{ MESSAGE }}"
       
