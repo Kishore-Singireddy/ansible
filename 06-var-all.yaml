@@ -1,11 +1,11 @@
 - name: This is the program for all variables
   hosts: mongodb
-  vars_file: 
+  vars_files: 
     - vars.yaml
 
   vars_prompt:
     - name: LOCATION
-      prompt: Entre prompt!
+      prompt: "Entre prompt!"
   vars:
     LOCATION: This is from playbook
   tasks:
