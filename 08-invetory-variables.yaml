@@ -3,7 +3,7 @@
   tasks: 
   - name: print host level variable
     ansible.builtin.debug:
-      msg: "Hi This {{ user_name }}, {{ LOCATION }} {{ password }}"
+      msg: "Hi This {{ ansible_user }}, {{ LOCATION }} {{ anisble_password }}"
 
 
 
