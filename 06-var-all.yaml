@@ -23,7 +23,7 @@
   tasks:
     - name: print the variable
       ansible.builtin.debug:
-      msg: This from playbook2 {{ LOCATION }}
+        msg: This from playbook2 {{ LOCATION }}
       
     
   
