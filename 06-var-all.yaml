@@ -20,6 +20,8 @@
 
 - name: Playbook 2
   hosts: mongodb
+  vars_files:
+    - vars.yaml
   tasks:
     - name: print the variable
       ansible.builtin.debug:
