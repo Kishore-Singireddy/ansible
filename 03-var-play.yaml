@@ -18,14 +18,15 @@
   hosts: nginx
   vars:
     LEVEL: two
-    TASK: two
+    TASK: 2.1
   tasks:
     - name: Play 2 print
       ansible.builtin.debug:
         msg: "This variable is from Play {{ LEVEL }} and {{ TASK }}"
         #msg: "Today is {{ DATE }}, {{ MESSAGE }}"
-      
 
     - name: Play 2 leve 2
+      vars:
+        TASK: 2.2
       ansible.builtin.debug:
         msg: "This variable is from Play {{ LEVEL }} and {{ TASK }} - play 2 level2"
