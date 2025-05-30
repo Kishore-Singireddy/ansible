@@ -1,6 +1,6 @@
 - name: varible through prompt
   hosts: mongodb
-  vars_prompts:
+  vars_prompt:
     name: USER_NAME
     prompt: Enter your User name
     name: REQUIREMENT
