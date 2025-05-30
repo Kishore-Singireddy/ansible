@@ -8,7 +8,7 @@
   tasks:
     - name: print the variables
       ansible.builtin.debug:
-        msg: "Today is {{ DATE }}, {{ MESSAGE }}"
+        #msg: "Today is {{ DATE }}, {{ MESSAGE }}"
         msg: "This variable is from Play {{ LEVEL }} and {{ TASK }}"
 
 
