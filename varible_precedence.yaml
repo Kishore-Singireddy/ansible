@@ -3,8 +3,8 @@
   connection: local
   vars: 
     GREETING: "hello_from_play"
-  vars_files:
-  - vars.yaml
+  # vars_files:
+  # - vars.yaml
   vars_prompt:
   - name: GREETING
     prompt: "Enter PROMPT"
