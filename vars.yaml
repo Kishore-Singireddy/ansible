@@ -1,2 +1,3 @@
 FROM: Vars_file
 LOCATION: from file vars.yaml
+GREETING: "Hello_from_Vars-file"
