@@ -1,0 +1,13 @@
+- name: prompting varilables
+  hosts: mongodb
+  vars_prompt:
+    - name: username
+      prompt: "Enter your username "
+
+    - password: password
+      prompt: Enter your password:
+      private: yes
+  tasks:
+    - name: print the user name
+      ansible.builtin.dbeug:
+        msg: the details you entered is {{ name }} and its password {{ password }}
