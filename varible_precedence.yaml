@@ -1,16 +1,17 @@
 - name: program for variable precedence
   hosts: local
   connection: local
-  vars_file:
+  vars: 
+    GREETING: "hello_from_play"
+  vars_files:
   - vars.yaml
   vars_prompt:
   - name: GREETING
     prompt: "Enter PROMPT"
-  vars: 
-  - GREETING: "hello_from_play"
+    private: false
   tasks:
   - name: varible precedence
     vars: 
-    - GREETING: "Hello_from_tasks"
+      GREETING: "Hello_from_tasks"
     ansible.builitin.debug:
       msg: "{{ GREETING }}"
