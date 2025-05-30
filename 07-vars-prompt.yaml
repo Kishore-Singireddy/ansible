@@ -4,7 +4,7 @@
     - name: USER_NAME
       prompt: Enter your User name
       private: no
-    - req: REQUIREMENT
+    - name: REQUIREMENT
       prompt: Enter yuor requirement?
   tasks:
     - name: printing prompts
