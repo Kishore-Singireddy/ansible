@@ -1,6 +1,7 @@
 - name: variables from file
   hosts: mongodb
-  vars_file: vars
+  vars_file:
+    - vars.yaml
   tasks:
     - name: print variable from file
       ansible.builtin.debug:
