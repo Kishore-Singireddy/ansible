@@ -1,0 +1,11 @@
+- name: varible through prompt
+  hosts: mongodb
+  vars_prompts:
+    name: USER_NAME
+    prompt: Enter your User name
+    name: REQUIREMENT
+    promppt: Enter yuor requirement? 
+  tasks:
+    - name: printing prompts
+      ansible.builtin.debug:
+        msg: "Hello {{ USER_NAME }} youu requirement is {{ REQUIREMENT }}"
