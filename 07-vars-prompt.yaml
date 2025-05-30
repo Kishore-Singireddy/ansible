@@ -3,8 +3,8 @@
   vars_prompt:
     name: USER_NAME
     prompt: Enter your User name
-    name: REQUIREMENT
-    promppt: Enter yuor requirement? 
+    req: REQUIREMENT
+    prompt: Enter yuor requirement? 
   tasks:
     - name: printing prompts
       ansible.builtin.debug:
