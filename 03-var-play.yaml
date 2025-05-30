@@ -3,7 +3,7 @@
   vars:
     DATE: 30.05.20025
     MESSAGE: "How are you"
-    LEVLE: One
+    LEVEL: One
     TASK: One
   tasks:
     - name: print the variables
