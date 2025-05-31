@@ -9,10 +9,10 @@
       ansible.builtin.debug:
         msg: "The number {{ NUM }} is less then 100"
       when:
-       " NUM < 100 "
+       NUM < 100 
 
     - name: condition statement - Greater then 100
       ansible.builtin.debug:
         msg: "The number {{ NUM }} is less then 100"
       when:
-       " NUM > 100 "
+       NUM > 100
