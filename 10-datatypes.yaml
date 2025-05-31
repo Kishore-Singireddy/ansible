@@ -18,5 +18,5 @@
       PineApple: fiber
   tasks:
     - name: print the data types
-      asible.builtin.debug:
+      ansible.builtin.debug:
         msg: "This is {{ NAME }}, He likes {{ FRUITS }} because {{ REASON }}"
