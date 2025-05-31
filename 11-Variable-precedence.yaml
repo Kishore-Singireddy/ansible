@@ -1,8 +1,8 @@
 - name: variable precedence
   hosts: local
   connection: local
-  vars:
-    GREETING: Play
+  # vars:
+  #   GREETING: Play
   # vars_files: 
   #   - vars.yaml
   # vars_prompt:
@@ -19,8 +19,8 @@
 
 - name: variable precedence
   hosts: mongodb
-  vars:
-    GREETING: Play
+  # vars:
+  #   GREETING: Play
   # vars_files: 
   #   - vars.yaml
   tasks:
