@@ -11,8 +11,8 @@
       private: false
   tasks:
     - name: print the LOCATION
-      vars:
-        GREETING: Tasks
+      # vars:
+      #   GREETING: Tasks
       ansible.builtin.debug:
         msg: "This variable is from {{ GREETING }}"
 
