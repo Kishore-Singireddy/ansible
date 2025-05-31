@@ -1,8 +1,9 @@
 - name: program to test condition (if number is less or greater then 100)
   hosts: local
   connection: local
-  vars:
-    NUM: 79
+  vars_prompt:
+    - name: NUM
+      prompt: "Enter any number: "
   tasks:
     - name: condition statement - Less then 100
       ansible.builtin.debug:
