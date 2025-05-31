@@ -3,8 +3,8 @@
   connection: local
   vars:
     GREETING: Play
-  vars_files: 
-    - vars.yaml
+  # vars_files: 
+  #   - vars.yaml
   vars_prompt:
     - name: GREETING
       prompt: "Enter Prompt: "
@@ -21,8 +21,8 @@
   hosts: mongodb
   vars:
     GREETING: Play
-  vars_files: 
-    - vars.yaml
+  # vars_files: 
+  #   - vars.yaml
   tasks:
     - name: print the LOCATION
       ansible.builtin.debug:
