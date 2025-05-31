@@ -1,0 +1,17 @@
+- name: os_family RedHat
+  hosts: mongodb
+  become: yes
+  tasks:
+    - name: condtion to check the os
+      ansible.builtin.dnf:
+        name: mongodb
+        state: present
+      when:
+        "{{ ansible_facts }} == RedHat"
+
+    - name: condtion to check the os
+      ansible.builtin.apt:
+        name: mongodb
+        state: present
+      when:
+        "{{ ansible_facts }} == Debian"
