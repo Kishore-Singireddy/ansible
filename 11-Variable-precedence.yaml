@@ -5,9 +5,10 @@
     GREETING: Play
   vars_files: 
     - vars.yaml
-  vars_prompts:
+  vars_prompt:
     - name: GREETING
       prompt: "Enter Prompt: "
+      private: false
   tasks:
     - name: print the LOCATION
       vars:
