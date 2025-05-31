@@ -4,6 +4,7 @@
   vars_prompt:
     - name: NUM
       prompt: "Enter any number: "
+      secrete: No
   tasks:
     - name: condition statement - Less then 100
       ansible.builtin.debug:
