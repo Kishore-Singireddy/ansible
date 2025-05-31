@@ -1,0 +1,9 @@
+- nmae: Capturing package facts
+  hosts: mongodb
+  tasks:
+    ansible.builtin.package_facts: {}
+
+- name: Checking if nginx is installed or not
+  tasks: 
+    ansible.bulitin.debug:
+      msg: "Nginx is installed : {{ yes if 'nginx' in ansible_facts.packges else 'no' }}"
