@@ -1,0 +1,22 @@
+- name: program for data types
+  hosts: local
+  connection: local
+  vars:
+    NAME: Kishore
+    AGE: 44
+    FRUITS:
+      - Apple
+      - Jack_Fruit
+      - Guavua
+      - Orange
+      - Pine_Apple
+    REASON:
+      Apple: Sweet
+      Jack_Fruit: Sweet
+      Guavua: Soft
+      Orange: Sour_and_Sweet
+      PineApple: fiber
+  tasks:
+    - name: print the data types
+      asible.builtin.debug:
+        msg: "This is {{ NAME }}, He likes {{ FRUITS }} because {{ REASON }}"

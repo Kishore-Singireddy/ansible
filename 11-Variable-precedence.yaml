@@ -1,0 +1,28 @@
+- name: variable precedence
+  hosts: local
+  connection: local
+  vars:
+    GREETING: Play
+  vars_files: 
+    - vars.yaml
+  vars_prompts:
+    - name: GREETING
+      prompt: "Enter Prompt: "
+  tasks:
+    - name: print the LOCATION
+      vars:
+      GREETING: Tasks
+      ansible.builtin.debug:
+        msg: "This variable is from {{ GREETING }}"
+
+
+- name: variable precedence
+  hosts: mongodb
+  vars:
+    GREETING: Play
+  vars_files: 
+    - vars.yaml
+  tasks:
+    - name: print the LOCATION
+      ansible.builtin.debug:
+        msg: "This variable is from {{ GREETING }}"

@@ -1,14 +1,16 @@
 - name: program for variable precedence
   hosts: local
   connection: local
-  # vars: 
-  #   GREETING: "hello_from_play"
-  # vars_files:
-  # - vars.yaml
-  # vars_prompt:
-  # - name: GREETING
-  #   prompt: "Enter PROMPT"
-  #   private: false
+  vars_files:
+  - vars.yaml
+
+  vars: 
+    GREETING: "hello_from_play"
+  
+  vars_prompt:
+  - name: GREETING
+    prompt: "Enter PROMPT"
+    private: false
   tasks:
   - name: varible precedence
     # vars: 
