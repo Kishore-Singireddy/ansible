@@ -1,4 +1,4 @@
-- nmae: Capturing package facts
+- name: Capturing package facts
   hosts: mongodb
   tasks:
     ansible.builtin.package_facts: {}
