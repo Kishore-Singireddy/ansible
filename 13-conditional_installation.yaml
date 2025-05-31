@@ -4,14 +4,14 @@
   tasks:
     - name: condtion to check the os
       ansible.builtin.dnf:
-        name: mongodb
+        name: nginx
         state: present
       when:
         ansible_os_family == "RedHat"
 
     - name: condtion to check the os
       ansible.builtin.apt:
-        name: mongodb
+        name: nginx
         state: present
       when:
         ansible_os_family == "Debian"
