@@ -7,11 +7,11 @@
         name: mongodb
         state: present
       when:
-        "{{ ansible_facts }} == RedHat"
+        ansible_os_family == "RedHat"
 
     - name: condtion to check the os
       ansible.builtin.apt:
         name: mongodb
         state: present
       when:
-        "{{ ansible_facts }} == Debian"
+        ansible_os_family == "Debian"
