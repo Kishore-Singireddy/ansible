@@ -1,0 +1,17 @@
+- name: Conditional Nginx installe
+  hosts: mongodb
+  become: yes
+  tasks:
+    - name: check the os_family and decide
+      ansible.builtin.dnf:
+        name: nginx
+        state: present
+      when: 
+        ansible_os_family ==  "RedHat "
+    
+    - name: check the os_family and decide
+      ansible.builtin.apt:
+        name: nginx
+        state: present
+      when: 
+        ansible_os_family == " Debian "
