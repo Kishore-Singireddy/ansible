@@ -1,15 +1,19 @@
 - name: Juice_Stall
   hosts: local
   connection: local
+  vars_files: fruits.yaml
   vars_prompt:
   - name: UNAME 
-    prompt: "Enter your name: "
+    prompt: "Enter your name "
     private: no
   - name: SELECTION 
-    prompt: " What is your selection {{ FRUITS }}..."
+    prompt: " Which fruit do you want {{ FRUITS }}..? "
     private: no
 
-  vars_files: fruits.yaml
+  - name: Type
+    prompt: " How do you want it {{ TYPE }} ? "
+    private: no
+
   tasks: 
   - name: welcome message
     ansible.builtin.debug:
@@ -20,6 +24,7 @@
   - name: " Selection of juice "
     ansible.builtin.debug:
       msg: " what do you want today, {{ FRUITS }}"
+
     
 
   
