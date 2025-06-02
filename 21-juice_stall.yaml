@@ -14,7 +14,7 @@
   
     - name: " Selection of juice "
       ansible.builtin.debug:
-        msg: " what do you want today, {{ FRUITS }}
+        msg: " what do you want today, {{ FRUITS }}"
       vars_prompt:
         name: SELECTION 
         prompt: " Juice or Cut Fruits "
