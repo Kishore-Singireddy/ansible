@@ -3,7 +3,7 @@
   connection: local
   tasks:
     - name: task for loop
-      ansible.builtin.degbug:
+      ansible.builtin.debug:
        msg: "Hi This is {{ item }}! "
       loop:
         - Kishore
