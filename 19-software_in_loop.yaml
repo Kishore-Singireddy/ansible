@@ -3,7 +3,7 @@
   become: yes
   tasks:
     - name: program logic
-      ansible.builtin.package:
+      ansible.builtin.debug:
         name: "{{ name.item }}"
         state: "{{ state.item }}"
       loop:
