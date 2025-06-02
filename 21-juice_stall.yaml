@@ -5,6 +5,10 @@
   - name: UNAME 
     prompt: "Enter your name: "
     private: no
+  - name: SELECTION 
+    prompt: " What is your selection {{ FRUITS }}..."
+    private: no
+
   vars_files: fruits.yaml
   tasks: 
   - name: welcome message
@@ -16,9 +20,6 @@
   - name: " Selection of juice "
     ansible.builtin.debug:
       msg: " what do you want today, {{ FRUITS }}"
-    vars_prompt:
-      - name: SELECTION 
-        prompt: " Juice or Cut Fruits "
-        private: no
+    
 
   
