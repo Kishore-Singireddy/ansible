@@ -11,11 +11,11 @@
     ansible.builtin.debug:
       msg: "Hi Welcome {{UNAME}} to Kishore's Fruits Stall {{ FRUITS }}"
 
-  - name: Juice or cut fruits
-    tasks:
-    - name: " Selection of juice "
-      ansible.builtin.debug:
-        msg: " what do you want today, {{ FRUITS }}"
+  # - name: Juice or cut fruits
+  #   tasks:
+  - name: " Selection of juice "
+    ansible.builtin.debug:
+      msg: " what do you want today, {{ FRUITS }}"
       vars_prompt:
       - name: SELECTION 
         prompt: " Juice or Cut Fruits "
