@@ -7,6 +7,6 @@
         msg: "{{ name.item }}"
         msg: "{{ state.item }}"
       loop:
-        - { name:nginx, state:installed }
-        - { name:mysql, state:remove }
-        - { name=httpd , state=instatted }
+        - { name: nginx, state: installed }
+        - { name: mysql, state: remove }
+        - { name: httpd , state: instatted }
