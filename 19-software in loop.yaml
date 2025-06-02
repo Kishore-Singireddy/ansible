@@ -1,0 +1,11 @@
+- name: installing multiple software in loop
+  hosts: mongodb
+  tasks:
+    - nmae: program logic
+      ansible.bulitin.package:
+        name: "{{ name.item }}"
+        state: "{{ state.item }}"
+      loop:
+        - '{ name=nginx, state=installed }'
+        - '{ name=mysql, state=remove }'
+        - '{ name=httpd , state=instatted }'
