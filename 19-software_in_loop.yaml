@@ -3,9 +3,9 @@
   become: yes
   tasks:
     - name: program logic
-      ansible.builtin.debug:
-        msg: "{{ name.item }}"
-        msg: "{{ state.item }}"
+      ansible.builtin.package:
+        name: "{{ name.item }}"
+        state: "{{ state.item }}"
       loop:
         - { name: 'nginx', state: 'installed' }
         - { name: 'mysql' , state: 'remove'  }
