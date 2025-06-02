@@ -1,5 +1,6 @@
 - name: installing multiple software in loop
   hosts: mongodb
+  become: yes
   tasks:
     - nmae: program logic
       ansible.bulitin.package:
