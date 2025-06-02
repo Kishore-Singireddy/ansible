@@ -2,7 +2,7 @@
   hosts: mongodb
   become: yes
   tasks:
-    - nmae: program logic
+    - name: program logic
       ansible.bulitin.package:
         name: "{{ name.item }}"
         state: "{{ state.item }}"
