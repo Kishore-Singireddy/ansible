@@ -2,11 +2,11 @@
   hosts: mongodb
   become: yes
   tasks:
-    - name: program logic
-      ansible.builtin.package:
-        name: "{{ name.item }}"
-        state: "{{ state.item }}"
-      loop:
-        - { name: 'nginx', state: 'installed' }
-        - { name: 'mysql' , state: 'remove'  }
-        - { name: 'httpd' , state: 'installed' }
+  - name: program logic
+    ansible.builtin.package:
+      name: "{{ name.item }}"
+      state: "{{ state.item }}"
+    loop:
+      - { name: 'nginx', state: 'installed' }
+      - { name: 'mysql' , state: 'remove'  }
+      - { name: 'httpd' , state: 'installed' }
