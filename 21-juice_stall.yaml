@@ -5,7 +5,7 @@
   tasks:
   - name: welcome message
     ansible.builtin.debug:
-      msg: Hi Welcome to Kishores' Fruits
+      msg: "Hi Welcome to Kishores' Fruits Stall"
   vars_prompt:
   - name: UNAME 
     prompt: "Enter your name "
@@ -18,7 +18,7 @@
     prompt: " How do you want it {{ TYPE }} ? "
     private: no
 
-  tasks: 
+  #asks: 
   - name: welcome message
     ansible.builtin.debug:
       msg: "Hi Welcome {{UNAME}} to Kishore's Fruits Stall {{ FRUITS }}"
