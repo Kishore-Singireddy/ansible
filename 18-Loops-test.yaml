@@ -4,12 +4,12 @@
   tasks:
     - name: task for loop
       ansible.builtin.debug:
-       msg: "Hi This is {{ item }}! "
+       msg: "Hi This is {{ item }} ! "
       loop:
         - Kishore
         - Kiran
         - Kranthi
         - Daddy
-        - Munny
+        - Mummy
         - Ravi
         - Sweety
