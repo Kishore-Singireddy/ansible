@@ -4,8 +4,8 @@
   tasks:
     - name: program logic
       ansible.builtin.debug:
-        name: "{{ name.item }}"
-        state: "{{ state.item }}"
+        msg: "{{ name.item }}"
+        msg: "{{ state.item }}"
       loop:
         - '{ name=nginx, state=installed }'
         - '{ name=mysql, state=remove }'
