@@ -9,4 +9,4 @@
       loop:
         - { name: 'nginx', state: 'installed' }
         - { name: 'mysql' , state: 'remove'  }
-        - { name: 'httpd' , state: 'instatted' }
+        - { name: 'httpd' , state: 'installed' }
