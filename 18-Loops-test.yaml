@@ -1,0 +1,15 @@
+- name: program to test loops
+  hosts: local
+  connection: local
+  tasks:
+    - name: task for loop
+      ansible.builtin.degbug:
+       msg: "Hi This is {{ item }}! "
+      loop:
+        - Kishore
+        - Kiran
+        - Kranthi
+        - Daddy
+        - Munny
+        - Ravi
+        - Sweety
