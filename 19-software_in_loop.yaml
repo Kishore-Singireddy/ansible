@@ -1,5 +1,6 @@
 - name: updating multiple packages 
   hosts: mongodb
+  become: yes
   tasks:
   - name: using loop to install/remove packages
     ansible.builtin.package:
