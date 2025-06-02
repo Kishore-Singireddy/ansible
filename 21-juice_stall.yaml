@@ -23,7 +23,7 @@
     ansible.builtin.debug:
       msg: " Hi {{ UNAME }} - Here is your order {{ SELECTION }} of {{ TYPE }} \n Quantity is {{ QUANTITY }} Cost is {{ RATE }}"
     when:
-      " FRUITS= 1 "
+      " FRUITS | int = 1 "
 
   # - name: Juice or cut fruits
   #   tasks:
