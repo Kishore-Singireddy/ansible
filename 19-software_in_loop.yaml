@@ -4,8 +4,8 @@
   tasks:
   - name: program logic
     ansible.builtin.package:
-      name: "{{ name.item }}"
-      state: "{{ state.item }}"
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
     loop:
     - { name: 'nginx', state: 'installed' }
     - { name: 'mysql' , state: 'remove'  }
