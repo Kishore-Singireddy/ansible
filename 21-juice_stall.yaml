@@ -16,7 +16,7 @@
   #       msg: " what do you want today, {{ FRUITS }}
   #     vars_prompt:
 
-  tasks: 
+  #tasks: 
     - name: welcome message
       ansible.builtin.debug:
         msg: "Hi Welcome "
