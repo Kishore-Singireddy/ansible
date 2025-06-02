@@ -1,8 +1,8 @@
 FRUITS:
-- Mango
-- Jack_Fruit
-- Orange
-- Ice_Apple
+- 1: Mango
+- 2: Jack_Fruit
+- 3: Orange
+- 4: Ice_Apple
 
 TYPE:
 - Juice

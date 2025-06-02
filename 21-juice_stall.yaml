@@ -11,7 +11,7 @@
     prompt: "Hi Welcome to Kishore's Fruits Stall Enter your name "
     private: no
   - name: SELECTION 
-    prompt: " Which fruit do you want {{ FRUITS }}..? "
+    prompt: " Which fruit do you want {{ FRUITS }}..? Enter numbers 1 - 5"
     private: no
 
   - name: Type
