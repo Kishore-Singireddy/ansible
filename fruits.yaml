@@ -3,3 +3,12 @@ FRUITS:
 - Jack_Fruit
 - Orange
 - Ice_Apple
+
+TYPE:
+- Juice
+- Cut_Fruits
+- With_Honey
+
+QUANTITY: 100ml 
+
+RATE: 100
