@@ -2,6 +2,10 @@
   hosts: local
   connection: local
   vars_files: fruits.yaml
+  tasks:
+  - name: welcome message
+    ansible.builtin.debug:
+      msg: Hi Welcome to Kishores' Fruits
   vars_prompt:
   - name: UNAME 
     prompt: "Enter your name "
