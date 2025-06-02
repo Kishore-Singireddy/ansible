@@ -2,13 +2,13 @@
   hosts: local
   connection: local
   vars_files: fruits.yaml
-  tasks:
-  - name: welcome message
-    ansible.builtin.debug:
-      msg: "Hi Welcome to Kishores' Fruits Stall"
+  # tasks:
+  # - name: welcome message
+  #   ansible.builtin.debug:
+  #     msg: "Hi Welcome to Kishores' Fruits Stall"
   vars_prompt:
   - name: UNAME 
-    prompt: "Enter your name "
+    prompt: "Hi Welcome to Kishore's Fruits Stall Enter your name "
     private: no
   - name: SELECTION 
     prompt: " Which fruit do you want {{ FRUITS }}..? "
@@ -18,7 +18,7 @@
     prompt: " How do you want it {{ TYPE }} ? "
     private: no
 
-  #asks: 
+  tasks: 
   - name: welcome message
     ansible.builtin.debug:
       msg: "Hi Welcome {{UNAME}} to Kishore's Fruits Stall {{ FRUITS }}"
