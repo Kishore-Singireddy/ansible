@@ -21,7 +21,7 @@
   tasks: 
   - name: welcome message
     ansible.builtin.debug:
-      msg: "Hi Welcome {{UNAME}} to Kishore's Fruits Stall {{ FRUITS }}"
+      msg: " Here is your order {{TYPE }} of {{ FRUITS }} \n Quantity is {{ QUANTITY }} Cost is {{ RATE }}"
 
   # - name: Juice or cut fruits
   #   tasks:
