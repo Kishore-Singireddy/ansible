@@ -10,7 +10,7 @@
     - name: welcome message
       ansible.builtin.debug:
         msg: "Hi Welcome {{UNAME}} to Kishore's Fruits Stall"
-
+- name: Juice or cut fruits
   tasks:
     - name: " Selection of juice "
       ansible.builtin.debug:
