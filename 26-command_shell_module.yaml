@@ -8,7 +8,7 @@
     register: result
   - name: view result
     ansible.builtin.debug:
-      msg: result
+      msg: "{{ result }}"
   
   - name: command module
     ansible.builtin.command:
