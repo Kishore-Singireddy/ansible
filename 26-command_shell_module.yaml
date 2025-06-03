@@ -4,9 +4,8 @@
   tasks:
   - name: commmand module
     ansible.builtin.shell:
-      ls -ltr > /tmp/shell.txt
+      ls -ltr >> /tmp/shell.txt
   
   - name: command module
     ansible.builtin.command:
-      ls -ltr
-    
+      ls -ltr > /tmp/shell2.txt    
