@@ -3,7 +3,7 @@
   connection: local
   tasks:
   - name: defining and refferecning loops
-    ansible.builitin.debug:
+    ansible.builtin.debug:
       msg: "Hi {{ item }}, How are you ?"
 
     loops:
