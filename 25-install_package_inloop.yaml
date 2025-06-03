@@ -1,0 +1,13 @@
+- name: using loops to install pacakage
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+  - name: installing packages
+    ansbile.builitin.packages:
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+    loop:
+    - '{ name: nginx, state: absent }'
+    - '{ name: httpd, state: present }'
+    - '{name: python, state: present }'
