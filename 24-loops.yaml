@@ -1,0 +1,13 @@
+- name: loops def and refference
+  hosts: local
+  connection: local
+  tasks:
+  - name: defining and refferecning loops
+    ansible.builitin.debug:
+      msg: "Hi {{ item }}, How are you ?"
+
+    loops:
+    - Kishore
+    - Mahi
+    - Syamala
+    - Megahana
