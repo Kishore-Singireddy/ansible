@@ -4,7 +4,7 @@
   become: yes
   tasks:
 
-  - name: installing nginx via dnf
+  - name: os of the host
     ansible.builtin.debug:
      msg: "{{ ansible_os_family }}"
 
@@ -14,8 +14,8 @@
       name: nginx
       state: present
     when:
-      ansible_os_family == "Redhat"
-
+      ansible_os_family == "RedHat"
+      
   - name: using apt to install if os is debian
     ansible.builtin.apt:
       name: nginx
