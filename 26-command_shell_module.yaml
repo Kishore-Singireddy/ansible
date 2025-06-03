@@ -5,6 +5,10 @@
   - name: commmand module
     ansible.builtin.shell:
       ls -ltr >> /tmp/shell.txt
+    register: result
+  - name: view result
+    ansible.builtin.debug:
+      msg: result
   
   - name: command module
     ansible.builtin.command:
