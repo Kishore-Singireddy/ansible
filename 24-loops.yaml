@@ -5,7 +5,6 @@
   - name: defining and refferecning loops
     ansible.builtin.debug:
       msg: "Hi {{ item }}, How are you ?"
-
     loop:
     - Kishore
     - Mahi
