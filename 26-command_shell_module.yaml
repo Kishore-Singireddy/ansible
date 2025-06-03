@@ -12,4 +12,9 @@
   
   - name: command module
     ansible.builtin.command:
-      ls -ltr > /tmp/shell2.txt    
+      ls -ltr 
+    register: command_output
+
+  - name: view result2
+    ansible.builtin.debug:
+      msg: "{{ command_output }}"
