@@ -6,7 +6,7 @@
     ansible.builtin.debug:
       msg: "Hi {{ item }}, How are you ?"
 
-    loops:
+    loop:
     - Kishore
     - Mahi
     - Syamala
