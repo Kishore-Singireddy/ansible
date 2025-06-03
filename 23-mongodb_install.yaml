@@ -3,6 +3,12 @@
   connection: local
   become: yes
   tasks:
+
+  - name: installing nginx via dnf
+    ansible.builtin.debug:
+     msg: "{{ ansible_os_family }}"
+
+
   - name: installing nginx via dnf
     ansible.builtin.dnf:
       name: nginx
