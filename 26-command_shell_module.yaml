@@ -6,7 +6,7 @@
     ansible.builtin.shell:
       ls -ltr > /tmp/shell.txt
   
-  - name: shell module
+  - name: command module
     ansible.builtin.command:
       ls -ltr
     
